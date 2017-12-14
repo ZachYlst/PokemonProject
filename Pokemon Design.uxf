@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>110</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>package :: Class
+--
+data members
+--
+Constructors
+and
+Methods</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>100</y>
+      <w>370</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>/pokemon.model :: Pokemon/
+--
+- name : String
+- number : int
+- canEvolve : boolean
+- health : int
+- attackPoints : int
+- enhancementModifier : double
+--
++ Pokemon(int, String) : constructor
++ toString() : String
++ getPokemonInformation() : String
++ getPokemonTypes() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>230</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>package :: Interface
+--
+methods</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Pokemon Design
+Zachary Ylst
+12.14.17
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>320</y>
+      <w>370</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>/pokemon.model :: Derptastic/
+--
++ incinerate()
++ chomp()
++ overheat()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
