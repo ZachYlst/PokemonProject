@@ -22,6 +22,7 @@
 + toString() : String
 + getPokemonInformation() : String
 + getPokemonTypes() : String
+
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -34,9 +35,12 @@
       <h>70</h>
     </coordinates>
     <panel_attributes>Pokemon Design
+--
 Zachary Ylst
 12.14.17
-bg=blue</panel_attributes>
+
+bg=blue
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -49,9 +53,12 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>/pokemon.model :: Fire/
 --
-+ incinerate()
-+ chomp()
-+ overheat()
++ incinerate() : void
++ chomp() : void
++ overheat() : int
+
+bg=red
+transparency=1
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -64,6 +71,8 @@ bg=blue</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>pokemon.model :: Charmander
+
+bg=red
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -77,9 +86,12 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>/pokemon.model :: Grass/
 --
-+ camouflage()
-+ plantFlowers()
-+ confuse()
++ camouflage() : void
++ plantFlowers() : int
++ confuse() : void
+
+bg=green
+transparency=1
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -92,6 +104,8 @@ bg=blue</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>pokemon.model :: Bulbasaur
+
+bg=green
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -105,9 +119,12 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>/pokemon.model :: Electric/
 --
-+ electrocute()
-+ stun()
-+ recharge()
++ electrocute() : void
++ stun() : void
++ recharge() : int
+
+bg=yellow
+transparency=1
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -121,6 +138,7 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>pokemon.model :: Pikachu
 
+bg=yellow
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -145,6 +163,8 @@ bg=blue</panel_attributes>
     </coordinates>
     <panel_attributes>pokemon.model :: Charizard
 
+bg=red
+
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -168,6 +188,8 @@ bg=blue</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>pokemon.model :: Le Burninator
+
+bg=orange
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -191,6 +213,8 @@ bg=blue</panel_attributes>
       <h>30</h>
     </coordinates>
     <panel_attributes>pokemon.model :: Snivy
+
+bg=green
 </panel_attributes>
     <additional_attributes/>
   </element>

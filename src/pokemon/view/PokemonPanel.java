@@ -3,6 +3,8 @@ package pokemon.view;
 import pokemon.controller.PokemonController;
 import javax.swing.JPanel;
 import java.awt.Color;
+import javax.swing.JButton;
+import javax.swing.JLabel;
 
 public class PokemonPanel extends JPanel
 {
