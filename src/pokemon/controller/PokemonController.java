@@ -1,16 +1,49 @@
 package pokemon.controller;
 
 import pokemon.model.Pokemon;
-import pokemon.view.PokemonFrame;
-import pokemon.view.PokemonPanel;
+import java.util.List;
+import java.util.ArrayList;
 
 public class PokemonController
 {
-	private Pokemon pokemon;
-	private PokemonFrame pokemonFrame;
+	private List<Pokemon> pokedex;
 	
-	public void start()
+	public List<Pokemon> getPokedex()
 	{
+		return pokedex;
+	}
+	
+	public boolean isValidInteger(String input)
+	{
+		boolean valid = false;
 		
+		try
+		{
+			Integer.parseInt(input);
+			valid = true;
+		}
+		catch(NumberFormatException error)
+		{
+			popup.displayText("Only integer values are accepted");
+		}
+			
+			return valid;
+	}
+	
+	public boolean isValidDouble(String input)
+	{
+		boolean valid = false;
+		
+		try
+		{
+			Integer.parseInt(input);
+			valid = true;
+		}
+		catch(NumberFormatException error)
+		{
+			popup.displayText("Only integer values are accepted");
+		}
+			
+			return valid;
 	}
 }
