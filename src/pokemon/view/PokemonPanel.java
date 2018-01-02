@@ -7,6 +7,7 @@ import java.awt.Color;
 public class PokemonPanel extends JPanel
 {
 	private PokemonController appController;
+	private SpringLayout appLayout;
 	
 	private JLabel iconLabel;
 	private JLabel healthLabel;
@@ -50,6 +51,29 @@ public class PokemonPanel extends JPanel
 		super();
 		this.appController = appController;
 		
+		iconLabel = new JLabel();
+		healthLabel = new JLabel();
+		nameLabel = new JLabel();
+		numberLabel = new JLabel();
+		evolvableLabel = new JLabel();
+		modifierLabel = new JLabel();
+		attackLabel = new JLabel();
+		evolvableBox = new JCheckBox();
+		nameField = new JTextField();
+		numberField = new JTextField();
+		attackField = new JTextField();
+		healthField = new JTextField();
+		modifierField = new JTextField();
+		descriptionArea = new JTextArea();
+		typeArea = new JTextArea();
+		saveButton = new JButton();
+		clearButton = new JButton();
+		pokedexDropdown = new JComboBox();
+		firstType = new JPanel();
+		secondType = new JPanel();
+		thirdType = new JPanel();
+		fourthType = new JPanel();
+		
 		setupPanel();
 		setupLayout();
 		setupListeners();
@@ -58,7 +82,30 @@ public class PokemonPanel extends JPanel
 	
 	private void setupPanel()
 	{
+		this.setLayout(appLayout);
 		
+		this.add(iconLabel);
+		this.add(healthLabel);
+		this.add(nameLabel);
+		this.add(numberLabel);
+		this.add(evolvableLabel);
+		this.add(modifierLabel);
+		this.add(attackLabel);
+		this.add(evolvableBox);
+		this.add(nameField);
+		this.add(numberField);
+		this.add(attackField);
+		this.add(healthField);
+		this.add(modifierField);
+		this.add(descriptionArea);
+		this.add(typeArea);
+		this.add(saveButton);
+		this.add(clearButton);
+		this.add(pokedexDropdown);
+		this.add(firstType);
+		this.add(secondType);
+		this.add(thirdType);
+		this.add(fourthType);	
 	}
 	
 	private void setupLayout()

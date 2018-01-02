@@ -3,9 +3,12 @@ package pokemon.controller;
 import pokemon.model.Pokemon;
 import java.util.List;
 import java.util.ArrayList;
+import javax.swing.*;
 
 public class PokemonController
 {
+	private PokemonFrame appFrame;
+	
 	private List<Pokemon> pokedex;
 	
 	public List<Pokemon> getPokedex()
@@ -24,9 +27,9 @@ public class PokemonController
 		}
 		catch(NumberFormatException error)
 		{
-			popup.displayText("Only integer values are accepted");
+			JOptionPane.showMessageDialog(appFrame, "Only integer values are accepted");
 		}
-			
+		
 			return valid;
 	}
 	
@@ -41,7 +44,7 @@ public class PokemonController
 		}
 		catch(NumberFormatException error)
 		{
-			popup.displayText("Only integer values are accepted");
+			JOptionPane.showMessageDialog(appFrame, "Only integer values are accepted");
 		}
 			
 			return valid;
