@@ -7,10 +7,12 @@ import javax.swing.*;
 
 public class PokemonController
 {
-	appFrame = new PokemonFrame(this);
+	public void start()
+	{
+		
+	}
 	
-	pokedex = new ArrayList<Pokemon>();
-	buildPokedex();
+	private PokemonFrame appFrame;
 	
 	private void buildPokedex()
 	{
@@ -18,9 +20,11 @@ public class PokemonController
 		pokedex.add(new Charizard());
 		pokedex.add(new Snivy());
 		pokedex.add(new Bulbasaur());
-		pokedex.add(new Pikachu("pikachu"));
+		pokedex.add(new Pikachu());
 		pokedex.add(new LeBurninator());
 	}
+	
+	public ArrayList<Pokemon> pokedex;
 	
 	public List<Pokemon> getPokedex()
 	{
