@@ -1,6 +1,7 @@
 package pokemon.controller;
 
-import pokemon.model.Pokemon;
+import pokemon.model.*;
+import pokemon.view.PokemonFrame;
 import java.util.List;
 import java.util.ArrayList;
 import javax.swing.*;
@@ -11,7 +12,7 @@ public class PokemonController
 	{
 		
 	}
-	
+
 	private PokemonFrame appFrame;
 	
 	private void buildPokedex()
@@ -40,11 +41,11 @@ public class PokemonController
 			Integer.parseInt(input);
 			valid = true;
 		}
-		catch(NumberFormatException error)
+		catch(NumberFormatException error)		//If an integer is not input...
 		{
-			JOptionPane.showMessageDialog(appFrame, "Only integer values are accepted");
+			System.out.println("Only integer values are accepted: " + input + " is not");
 		}
-		
+			
 			return valid;
 	}
 	
@@ -54,14 +55,37 @@ public class PokemonController
 		
 		try
 		{
-			Integer.parseInt(input);
+			Double.parseDouble(input);
 			valid = true;
 		}
-		catch(NumberFormatException error)
+		catch (NumberFormatException error)
 		{
-			JOptionPane.showMessageDialog(appFrame, "Only integer values are accepted");
+			System.out.println("Only double values are accepted: " + input + " is not");
 		}
-			
-			return valid;
+	
+		return valid;
+	}
+	
+	public String [] convertPokedex()
+	{
+		String [] names = new String [pokedex.size()];
+		
+		for(int index = 0; index < pokedex.size(); index++)
+		{
+			names[index] = pokedex.get(index).getName();
+		}
+		
+		return names;
+	}
+	
+	public void updateSelected(int selection, int health, int attack, boolean evolve, double modify, String name)
+	{
+		Pokemon selected = pokedex.get(selection);
+		
+		selected.setAttackPoints(attack);
+		selected.setCanEvolve(evolve);
+		selected.setEnhancementModifier(modify);
+		selected.setName(name);
+		selected.setHealthPoints(health);
 	}
 }
